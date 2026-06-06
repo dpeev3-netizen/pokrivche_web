@@ -4,7 +4,6 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import FloatingContact from './components/FloatingContact';
 import CookieConsent from './components/CookieConsent';
-import { QuoteProvider } from './components/QuoteProvider';
 
 /** Scrolls to top on route change (no-op during SSR). */
 function ScrollToTop() {
@@ -18,7 +17,7 @@ function ScrollToTop() {
 /** Root layout shared by every page. */
 export default function App() {
   return (
-    <QuoteProvider>
+    <>
       <ScrollToTop />
       <div className="flex min-h-screen flex-col overflow-x-hidden selection:bg-primary/30 selection:text-dark">
         <Navbar />
@@ -29,6 +28,6 @@ export default function App() {
       </div>
       <FloatingContact />
       <CookieConsent />
-    </QuoteProvider>
+    </>
   );
 }

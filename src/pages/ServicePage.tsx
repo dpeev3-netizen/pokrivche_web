@@ -6,14 +6,12 @@ import SectionHeading from '../components/SectionHeading';
 import FaqAccordion from '../components/FaqAccordion';
 import CTASection from '../components/CTASection';
 import NotFound from './NotFound';
-import { useQuote } from '../components/QuoteProvider';
 import { serviceBySlug, services } from '../data/services';
 import { serviceSchema, breadcrumbSchema, faqPageSchema } from '../lib/seo';
 
 export default function ServicePage() {
   const { slug } = useParams<{ slug: string }>();
   const service = slug ? serviceBySlug(slug) : undefined;
-  const { openQuote } = useQuote();
 
   if (!service) return <NotFound />;
 
@@ -48,9 +46,9 @@ export default function ServicePage() {
                 <a href="tel:0886406812" className="bg-primary text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors inline-flex items-center justify-center gap-2">
                   <Phone className="w-4 h-4" /> Обадете се сега
                 </a>
-                <button onClick={openQuote} className="border-2 border-white/20 text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:border-primary hover:text-primary transition-colors cursor-pointer">
+                <Link to="/kontakti" className="border-2 border-white/20 text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:border-primary hover:text-primary transition-colors cursor-pointer text-center">
                   Поискай оферта
-                </button>
+                </Link>
               </div>
             </div>
             <div className="relative w-full lg:w-[460px] shrink-0">
@@ -87,9 +85,9 @@ export default function ServicePage() {
                     </li>
                   ))}
                 </ul>
-                <button onClick={openQuote} className="w-full mt-7 bg-primary text-white py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors cursor-pointer">
+                <Link to="/kontakti" className="block text-center w-full mt-7 bg-primary text-white py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors cursor-pointer">
                   Безплатен оглед
-                </button>
+                </Link>
               </div>
             </aside>
           </div>
