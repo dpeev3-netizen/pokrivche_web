@@ -13,7 +13,7 @@ export default function FloatingContact() {
           aria-label="Пишете ни в WhatsApp"
           className="w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-lg shadow-black/20 hover:scale-105 transition-transform"
         >
-          <img src="/images/whatsapp-white-icon.webp" alt="WhatsApp" className="w-7 h-7" />
+          <img src="/images/whatsapp-white-icon.webp" alt="WhatsApp" width={28} height={28} className="w-7 h-7" />
         </a>
       )}
       {business.social.viber && (
@@ -22,7 +22,7 @@ export default function FloatingContact() {
           aria-label="Обадете се във Viber"
           className="w-12 h-12 rounded-full bg-[#7360F2] text-white flex items-center justify-center shadow-lg shadow-black/20 hover:scale-105 transition-transform"
         >
-          <img src="/images/viber-white-icon.webp" alt="Viber" className="w-7 h-7" />
+          <img src="/images/viber-white-icon.webp" alt="Viber" width={28} height={28} className="w-7 h-7" />
         </a>
       )}
       <a

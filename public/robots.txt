@@ -1,9 +1,7 @@
 User-agent: *
 Allow: /
 
-# Legal pages are intentionally noindex
-Disallow: /poveritelnost
-Disallow: /obshti-usloviya
+# Legal pages (/poveritelnost, /obshti-usloviya) carry a `noindex` meta tag.
+# They are intentionally left crawlable so Google can actually read the noindex.
 
-# TODO: update the domain below if the site is hosted elsewhere
 Sitemap: https://pokrivche.bg/sitemap.xml

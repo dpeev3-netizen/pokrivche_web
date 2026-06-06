@@ -42,7 +42,7 @@ export default function About() {
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
             <div className="w-full lg:w-1/2">
               <div className="relative rounded-brand overflow-hidden shadow-sm border border-dark/5 aspect-[4/3]">
-                <img src="/images/about-hero.png" alt="Екипът на ПОКРИВЧЕ при работа" loading="lazy" className="w-full h-full object-cover" />
+                <img src="/images/about-hero.png" alt="Екипът на ПОКРИВЧЕ при работа" loading="lazy" width={1254} height={1254} className="w-full h-full object-cover" />
               </div>
             </div>
             <div className="w-full lg:w-1/2">

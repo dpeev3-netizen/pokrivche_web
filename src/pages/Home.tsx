@@ -20,6 +20,8 @@ function Hero() {
           src="/images/projects/zavarshen-keremiden-pokriv.webp"
           alt=""
           aria-hidden="true"
+          width={250}
+          height={250}
           className="w-full h-full object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-dark via-dark/90 to-dark/70" />
@@ -43,7 +45,7 @@ function Hero() {
               100% отстраняване на течове и изграждане на нови покриви в цяла България. Гарантирано качество и спокойствие за вашия дом.
             </p>
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
-              <a href="tel:0897858923" className="bg-primary text-white px-8 md:px-10 py-3.5 md:py-4 rounded-brand font-bold text-sm md:text-base uppercase tracking-widest hover:bg-red-800 transition-colors inline-flex items-center gap-2">
+              <a href="tel:0886406812" className="bg-primary text-white px-8 md:px-10 py-3.5 md:py-4 rounded-brand font-bold text-sm md:text-base uppercase tracking-widest hover:bg-red-800 transition-colors inline-flex items-center gap-2">
                 <Phone className="w-4 h-4" />
                 ОБАДЕТЕ СЕ СЕГА
               </a>
@@ -58,7 +60,7 @@ function Hero() {
             <div className="absolute -top-4 -right-4 w-full h-full rounded-brand bg-primary/20 rotate-2 transform-gpu" />
             <div className="absolute -bottom-4 -left-4 w-full h-full rounded-brand border-2 border-primary/30 -rotate-1 transform-gpu" />
             <div className="relative rounded-brand overflow-hidden shadow-2xl shadow-black/50 border-2 border-white/10">
-              <img src="/images/hero-roofer.png" alt="Професионален ремонт на покриви" className="w-full h-[380px] xl:h-[420px] object-cover" />
+              <img src="/images/hero-roofer.png" alt="Професионален ремонт на покриви" width={1254} height={1254} className="w-full h-[380px] xl:h-[420px] object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-dark/60 via-transparent to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-l from-transparent to-dark/20" />
               <div className="absolute top-0 right-0 w-20 h-20">
@@ -99,7 +101,7 @@ function AboutUs() {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
           <div className="w-full lg:w-1/2">
             <div className="relative rounded-brand overflow-hidden shadow-sm border border-dark/5 group max-w-[450px] mx-auto">
-              <img src="/images/team.png" alt="Ремонт на покрив" loading="lazy" className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" />
+              <img src="/images/team.png" alt="Ремонт на покрив" loading="lazy" width={1122} height={1402} className="w-full h-auto object-cover transform transition-transform duration-700 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-tr from-dark/40 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/95 backdrop-blur px-6 py-4 rounded-xl border border-white inline-block">

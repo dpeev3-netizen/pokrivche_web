@@ -38,6 +38,7 @@ export default function Privacy() {
           <H>Администратор на лични данни</H>
           <P>
             {business.legalName}
+            <br />ЕИК: {business.eik}
             <br />Адрес: {business.address.street}, {business.address.city}
             <br />Телефон: {business.phone}
             <br />Имейл: {business.email}

@@ -29,8 +29,8 @@ export default function Terms() {
       <section className="bg-white py-16 lg:py-24">
         <div className="container mx-auto px-4 sm:px-6 lg:px-10 max-w-3xl">
           <P>
-            Настоящите Общи условия уреждат използването на уебсайта на {business.legalName} и реда за заявяване на
-            нашите услуги. С използването на сайта вие се съгласявате с тези условия.
+            Настоящите Общи условия уреждат използването на уебсайта на {business.legalName} (ЕИК {business.eik}) и реда
+            за заявяване на нашите услуги. С използването на сайта вие се съгласявате с тези условия.
           </P>
 
 

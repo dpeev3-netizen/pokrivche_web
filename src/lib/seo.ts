@@ -1,5 +1,4 @@
 import { business, absoluteUrl } from '../data/business';
-import { reviews, reviewsAggregate } from '../data/reviews';
 import type { Service } from '../data/services';
 import type { Faq } from '../data/faqs';
 import type { Post } from '../data/posts';
@@ -7,9 +6,9 @@ import type { Post } from '../data/posts';
 export const SITE_NAME = 'ПОКРИВЧЕ';
 export const DEFAULT_OG_IMAGE = absoluteUrl('/images/og-default.jpg'); // TODO: add a real 1200×630 share image
 export const DEFAULT_DESCRIPTION =
-  'Професионален ремонт на покриви, хидроизолация и нови покривни конструкции в цяла България. 15+ години опит. Безплатен оглед. ☎ 0897 858 923';
+  'Професионален ремонт на покриви, хидроизолация и нови покривни конструкции в цяла България. 15+ години опит. Безплатен оглед. ☎ 0886 406 812';
 
-const phoneE164 = '+359897858923';
+const phoneE164 = '+359886406812';
 
 /** schema.org address object built from the single source of truth. */
 function postalAddress() {
@@ -31,6 +30,7 @@ export function localBusinessSchema() {
     '@id': absoluteUrl('/#business'),
     name: business.name,
     legalName: business.legalName,
+    taxID: business.eik,
     url: business.siteUrl,
     telephone: phoneE164,
     email: business.email,
@@ -46,13 +46,8 @@ export function localBusinessSchema() {
       opens: h.opens,
       closes: h.closes,
     })),
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: reviewsAggregate.ratingValue,
-      reviewCount: reviewsAggregate.reviewCount,
-      bestRating: reviewsAggregate.bestRating,
-      worstRating: reviewsAggregate.worstRating,
-    },
+    // NOTE: no aggregateRating/review here — Google disallows self-serving review
+    // markup. Star ratings surface via the Google Business Profile instead.
   };
 }
 
@@ -103,28 +98,6 @@ export function breadcrumbSchema(items: { name: string; path: string }[]) {
       position: i + 1,
       name: it.name,
       item: absoluteUrl(it.path),
-    })),
-  };
-}
-
-/** Review list + aggregate for the testimonials page. */
-export function reviewsSchema() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'RoofingContractor',
-    '@id': absoluteUrl('/#business'),
-    name: business.name,
-    aggregateRating: {
-      '@type': 'AggregateRating',
-      ratingValue: reviewsAggregate.ratingValue,
-      reviewCount: reviewsAggregate.reviewCount,
-      bestRating: reviewsAggregate.bestRating,
-    },
-    review: reviews.map((r) => ({
-      '@type': 'Review',
-      author: { '@type': 'Person', name: r.name },
-      reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: 5 },
-      reviewBody: r.text,
     })),
   };
 }

@@ -14,7 +14,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <Link to="/" className="inline-block mb-4">
-              <img src="/images/logo.png" alt="ПОКРИВЧЕ" className="h-14 w-auto brightness-0 invert" />
+              <img src="/images/logo.png" alt="ПОКРИВЧЕ" width={2000} height={638} className="h-14 w-auto brightness-0 invert" />
             </Link>
             <p className="text-sm text-white/50 leading-relaxed mb-5 max-w-xs">{business.tagline}</p>
             <a href={business.phoneHref} className="text-2xl font-black font-heading tracking-wider hover:text-primary transition-colors block">

@@ -45,7 +45,7 @@ export default function ServicePage() {
               </h1>
               <p className="text-white/60 text-lg leading-relaxed max-w-xl mb-8">{service.intro}</p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="tel:0897858923" className="bg-primary text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors inline-flex items-center justify-center gap-2">
+                <a href="tel:0886406812" className="bg-primary text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:bg-red-800 transition-colors inline-flex items-center justify-center gap-2">
                   <Phone className="w-4 h-4" /> Обадете се сега
                 </a>
                 <button onClick={openQuote} className="border-2 border-white/20 text-white px-8 py-3.5 rounded-brand font-bold text-sm uppercase tracking-widest hover:border-primary hover:text-primary transition-colors cursor-pointer">

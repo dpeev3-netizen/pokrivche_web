@@ -31,7 +31,7 @@ export default function Navbar() {
     <header className="fixed top-0 z-50 w-full bg-white h-[80px] flex items-center shadow-sm shrink-0 border-b border-gray-100">
       <div className="container mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between max-w-screen-xl">
         <Link to="/" className="block -ml-1 shrink-0" aria-label="ПОКРИВЧЕ — начало">
-          <img src="/images/logo.png" alt="ПОКРИВЧЕ — Ремонт на покриви" className="h-14 sm:h-[64px] w-auto" />
+          <img src="/images/logo.png" alt="ПОКРИВЧЕ — Ремонт на покриви" width={2000} height={638} className="h-14 sm:h-[64px] w-auto" />
         </Link>
 
         {/* Desktop nav */}

@@ -6,36 +6,37 @@
 
 export const business = {
   name: 'ПОКРИВЧЕ',
-  // TODO: official legal/company name (ЕООД/ООД) for invoices & legal pages
-  legalName: 'ПОКРИВЧЕ',
+  // Official legal/company name (used on invoices & legal pages).
+  legalName: 'ТС ГРУП БГ ЕООД',
+  // ЕИК — Bulgarian Unified Identification Code.
+  eik: '207523126',
   tagline: 'Вашият сигурен партньор за ремонт на покриви.',
 
   // Phone (single source — used in every CTA, tel: link and schema)
-  phone: '0897 858 923',
-  phoneHref: 'tel:0897858923',
-  phoneIntl: '359897858923', // for wa.me / viber links
+  phone: '0886 406 812',
+  phoneHref: 'tel:0886406812',
+  phoneIntl: '359886406812', // for wa.me / viber links
 
-  // TODO: real public email address
-  email: 'office@pokrivche.bg',
+  email: 'pokrivcheremont@gmail.com',
 
-  // TODO: real domain (used for canonical URLs, OG tags and sitemap.xml)
+  // Production domain (used for canonical URLs, OG tags and sitemap.xml)
   siteUrl: 'https://pokrivche.bg',
 
-  // TODO: confirm full street address (NAP) — important for local SEO
+  // Full street address (NAP) — keep in sync with the Google Business Profile.
   address: {
-    street: 'ул. Примерна 1', // TODO
+    street: 'ул. „Кедър" 4',
     city: 'София',
     region: 'София-град',
-    postalCode: '1000', // TODO
+    postalCode: '1618',
     countryCode: 'BG',
     country: 'България',
   },
 
-  // Approximate office coordinates — TODO: set real lat/lng for LocalBusiness schema
-  geo: { lat: 42.6977, lng: 23.3219 },
+  // Office coordinates (ул. „Кедър", кв. Манастирски ливади). Fine-tune to the exact Google Business pin.
+  geo: { lat: 42.6617, lng: 23.2765 },
 
-  // TODO: paste the Google Maps "embed" iframe src for the contact page
-  mapEmbedSrc: '',
+  // Keyless Google Maps embed centred on the office. Swap for the official "place" embed once the Google Business Profile is live.
+  mapEmbedSrc: 'https://www.google.com/maps?q=42.6617,23.2765&z=16&output=embed',
 
   // Working hours (shown on contact page + openingHours schema)
   hoursLabel: 'Понеделник – Неделя: 07:00 – 20:00',
@@ -48,8 +49,8 @@ export const business = {
   social: {
     facebook: '',
     instagram: '',
-    viber: 'viber://chat?number=359897858923',
-    whatsapp: 'https://wa.me/359897858923',
+    viber: 'viber://chat?number=359886406812',
+    whatsapp: 'https://wa.me/359886406812',
   },
 
   // TODO: link to the public Google Business Profile reviews page

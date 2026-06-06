@@ -5,7 +5,7 @@ import ReviewCard from '../components/ReviewCard';
 import CTASection from '../components/CTASection';
 import { reviews, reviewsAggregate } from '../data/reviews';
 import { business } from '../data/business';
-import { reviewsSchema, breadcrumbSchema } from '../lib/seo';
+import { breadcrumbSchema } from '../lib/seo';
 
 const crumbs = [
   { name: 'Начало', path: '/' },
@@ -19,7 +19,7 @@ export default function Testimonials() {
         title="Отзиви от клиенти за ПОКРИВЧЕ | Ремонт на покриви"
         description="Прочетете какво казват клиентите ни за ремонта на покриви, отстраняването на течове и обслужването на ПОКРИВЧЕ в цяла България."
         path="/otzivi"
-        jsonLd={[reviewsSchema(), breadcrumbSchema(crumbs)]}
+        jsonLd={[breadcrumbSchema(crumbs)]}
       />
       <PageHeader
         crumbs={crumbs}
