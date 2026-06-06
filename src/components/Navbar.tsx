@@ -46,7 +46,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <a
             href={business.phoneHref}
-            className="flex items-center gap-2 bg-primary text-white px-4 sm:px-6 py-2 rounded-brand font-bold text-sm tracking-wide hover:bg-red-800 transition-colors"
+            className="hidden md:flex items-center gap-2 bg-primary text-white px-4 sm:px-6 py-2 rounded-brand font-bold text-sm tracking-wide hover:bg-red-800 transition-colors"
           >
             <Phone className="w-4 h-4 hidden sm:block" />
             <span className="text-sm sm:text-lg whitespace-nowrap">{business.phone}</span>
