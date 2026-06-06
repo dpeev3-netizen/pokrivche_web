@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Legal pages are intentionally noindex
+Disallow: /poveritelnost
+Disallow: /obshti-usloviya
+
+# TODO: update the domain below if the site is hosted elsewhere
+Sitemap: https://pokrivche.bg/sitemap.xml
