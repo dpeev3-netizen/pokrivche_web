@@ -20,7 +20,7 @@ export const business = {
   email: 'pokrivcheremont@gmail.com',
 
   // Production domain (used for canonical URLs, OG tags and sitemap.xml)
-  siteUrl: 'https://pokrivche.bg',
+  siteUrl: 'https://pokrivche.com',
 
   // Full street address (NAP) — keep in sync with the Google Business Profile.
   address: {

@@ -4,4 +4,4 @@ Allow: /
 # Legal pages (/poveritelnost, /obshti-usloviya) carry a `noindex` meta tag.
 # They are intentionally left crawlable so Google can actually read the noindex.
 
-Sitemap: https://pokrivche.bg/sitemap.xml
+Sitemap: https://pokrivche.com/sitemap.xml
